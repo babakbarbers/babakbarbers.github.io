@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babak Barbers - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Babak Barbers</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery of Legendary Cuts</h2>
+            <p>Feast your eyes on Babak's **finest** work.</p>
+
+            <div class="gallery-grid">
+                <img src="cut1.jpg" alt="Skibidi Cut" onclick="enlargeImage(this)">
+                <img src="cut2.jpg" alt="Classic 90s Style" onclick="enlargeImage(this)">
+                <img src="cut3.jpg" alt="Babak Signature Fade" onclick="enlargeImage(this)">
+                <img src="cut4.jpg" alt="P. Diddy Approved Look" onclick="enlargeImage(this)">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Babak Barbers. All rights reserved.</p>
+            <p><strong>Disclaimer: This website is a joke and not a real business.</strong></p>
+        </div>
+    </footer>
+
+    <!-- Enlarged Image Viewer -->
+    <div id="image-viewer" class="hidden">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="full-image" src="" alt="Enlarged Image">
+    </div>
+</body>
+</html>
